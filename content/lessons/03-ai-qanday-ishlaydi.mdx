@@ -1,0 +1,75 @@
+---
+id: 3
+slug: "ai-qanday-ishlaydi"
+title: "AI qanday ishlaydi?"
+description: "Model, data, training, inference, neural network asoslari"
+duration: 35
+type: "nazariy"
+moduleId: 1
+---
+
+# AI qanday ishlaydi?
+
+## Kirish
+
+AI "sehrli" tuyulishi mumkin, lekin uning ishlash prinsipi oddiy g'oyaga asoslangan: **katta hajmdagi ma'lumotlardan naqshlarni topish**.
+
+## AI ning 3 asosiy tarkibiy qismi
+
+AI ishlashi uchun 3 narsa kerak:
+
+1. **Ma'lumotlar (Data)** — model o'rganadigan misollar
+2. **Model (Algorithm)** — naqshlarni topuvchi matematik formula
+3. **Hisoblash quvvati (Compute)** — kuchli kompyuterlar
+
+<InfoBox type="info">
+Masalan, mushuk rasmini taniy oladigan AI yaratish uchun modelga millionlab mushuk va boshqa hayvon rasmlarini ko'rsatish kerak. Model ularning farqini o'zi o'rganadi.
+</InfoBox>
+
+## Neural Network — neyron tarmoq
+
+Neural network inson miyasidagi neyronlarning bog'lanishiga o'xshatib yaratilgan tizim.
+
+**Oddiy tilda:**
+- Kirish qatlami → ma'lumotni qabul qiladi (masalan, rasm piksellari)
+- Yashirin qatlamlar → naqshlarni topadi
+- Chiqish qatlami → javob beradi (masalan, "bu mushuk")
+
+Qanchalik ko'p qatlam bo'lsa, model shunchalik murakkab naqshlarni topa oladi. Shuning uchun "Deep Learning" (chuqur o'rganish) deb ataladi.
+
+## Training — modelni o'qitish
+
+Training jarayoni quyidagicha ishlaydi:
+
+1. Modelga **misollar** ko'rsatiladi
+2. Model **bashorat** qiladi
+3. Bashorat **haqiqat bilan solishtiriladi**
+4. Model o'z xatosidan **o'rganadi**
+5. Bu jarayon **millionlab marta** takrorlanadi
+
+<InfoBox type="tip">
+Buni bolaning o'rganishiga o'xshating: bola birinchi marta "mushuk" so'zini eshitadi, rasmni ko'radi, xato qiladi, tuzatiladi, va asta-sekin o'rganadi.
+</InfoBox>
+
+## Inference — xulosa chiqarish
+
+Model o'qitilgandan keyin, uni **yangi ma'lumotlarga** qo'llash mumkin. Bu jarayon **inference** deb ataladi.
+
+Masalan:
+- Training: modelga 10 million mushuk rasmi ko'rsatiladi
+- Inference: siz yangi rasm yuborasiz → model "bu mushuk, 95% ishonch" deydi
+
+## AI ishlash sxemasi
+
+```
+Ma'lumotlar → [O'qitish] → Model → [Inference] → Natija
+(rasmlar)    (training)           (yangi rasm)  (mushuk/it)
+```
+
+## Bilimingizni tekshiring
+
+<LessonQuiz id="lesson-3" />
+
+## Asosiy atamalar
+
+<LessonFlashcards id="lesson-3" />

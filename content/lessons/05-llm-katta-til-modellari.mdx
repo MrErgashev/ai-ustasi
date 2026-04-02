@@ -1,0 +1,88 @@
+---
+id: 5
+slug: "llm-katta-til-modellari"
+title: "LLM — Katta til modellari"
+description: "Transformer arxitekturasi (oddiy tilda), tokenization, context window"
+duration: 40
+type: "amaliy"
+moduleId: 1
+---
+
+# LLM — Katta til modellari
+
+## Kirish
+
+**LLM** (Large Language Model) — hozirgi AI inqilobining asosi. ChatGPT, Claude, Gemini — bularning barchasi LLM ga asoslangan.
+
+<InfoBox type="info">
+LLM — bu juda katta matn ma'lumotlarida o'qitilgan model. U keyingi so'zni bashorat qilish orqali mazmunli matn yaratadi.
+</InfoBox>
+
+## LLM qanday ishlaydi?
+
+Oddiy qilib aytganda, LLM **keyingi so'zni bashorat qiladi**.
+
+Masalan:
+- Kirish: "Toshkent — O'zbekistonning..."
+- LLM bashorati: "...poytaxti" (eng ehtimoliy keyingi so'z)
+
+Bu oddiy tuyulsa ham, milliardlab parametrlar va trilionlab so'zlardan o'qitilganda, model juda murakkab va mazmunli matnlar yarata oladi.
+
+## Transformer arxitekturasi
+
+2017-yilda Google tadqiqotchilari **"Attention is All You Need"** maqolasini nashr etdi. Bu **Transformer** arxitekturasini taqdim etdi.
+
+**Oddiy tilda Transformer:**
+- Oddiy model matnni **chapdan o'ngga** ketma-ket o'qiydi
+- Transformer **barcha so'zlarni bir vaqtda** ko'ra oladi
+- Bu "attention" (diqqat) mexanizmi deb ataladi
+
+<InfoBox type="tip">
+Buni shunday tasavvur qiling: oddiy model kitobni sahifama-sahifa o'qiydi. Transformer esa butun kitobni bir vaqtda ko'rib, muhim qismlarini ajrata oladi.
+</InfoBox>
+
+## Tokenization — matnni bo'laklash
+
+LLM matnni harflar yoki so'zlar emas, **tokenlar** sifatida o'qiydi.
+
+- 1 token ≈ 3/4 so'z (ingliz tilida)
+- "Hello world" = 2 token
+- "Sun'iy intellekt" ≈ 4-5 token
+
+**Nega bu muhim?**
+- LLM lar token soni bo'yicha **narxlanadi**
+- GPT-4: $30 / 1 million token (chiqish)
+- Claude: $15 / 1 million token (chiqish)
+
+## Context Window
+
+Context window — LLM **bir vaqtda o'qiy oladigan** maksimal token soni.
+
+| Model | Context Window |
+|-------|---------------|
+| GPT-3.5 | 16K token |
+| GPT-4 | 128K token |
+| Claude 3.5 | 200K token |
+| Gemini 1.5 | 1M token |
+
+<InfoBox type="warning">
+Context window chegarasidan oshsangiz, model oldingi ma'lumotlarni "unutadi". Shuning uchun uzoq suhbatlarda ba'zan model avvalgi gaplarni eslolmaydi.
+</InfoBox>
+
+## Mashhur LLM lar
+
+| Model | Kompaniya | Xususiyati |
+|-------|-----------|-----------|
+| GPT-4 | OpenAI | Eng mashhur, ko'p qirrali |
+| Claude | Anthropic | Xavfsiz, uzoq kontekst |
+| Gemini | Google | Multimodal (matn+rasm+video) |
+| LLaMA | Meta | Ochiq kodli |
+| Mistral | Mistral AI | Tez va samarali |
+
+## Bilimingizni tekshiring
+
+<LessonQuiz id="lesson-5" />
+
+## Asosiy atamalar
+
+<LessonFlashcards id="lesson-5" />
