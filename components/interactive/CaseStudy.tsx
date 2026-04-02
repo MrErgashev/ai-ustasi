@@ -50,8 +50,8 @@ export function CaseStudy({ scenario, onComplete }: CaseStudyProps) {
 
   if (finished) {
     return (
-      <div className="my-6 rounded-lg border bg-card p-6 text-center">
-        <Trophy className="mx-auto h-8 w-8 text-amber-500" />
+      <div className="my-6 rounded-xl border bg-card p-6 text-center">
+        <Trophy className="mx-auto h-8 w-8 text-brand-orange" />
         <p className="mt-3 text-lg font-semibold">Keys tugadi!</p>
         <p className="mt-1 text-sm text-muted-foreground">
           &ldquo;{scenario.title}&rdquo; bo&apos;yicha qaroringiz baholandi
@@ -64,7 +64,7 @@ export function CaseStudy({ scenario, onComplete }: CaseStudyProps) {
   }
 
   return (
-    <div className="my-6 rounded-lg border bg-card p-5">
+    <div className="my-6 rounded-xl border bg-card p-5">
       {/* Scenario header */}
       {stepIndex === 0 && !showFeedback && (
         <div className="mb-5 rounded-lg bg-muted/50 p-4">
@@ -97,10 +97,10 @@ export function CaseStudy({ scenario, onComplete }: CaseStudyProps) {
             if (option.id === selectedOption) {
               style =
                 option.quality === "yaxshi"
-                  ? "border-emerald-500/50 bg-emerald-500/10"
+                  ? "border-brand-green/50 bg-brand-green/10"
                   : option.quality === "yomon"
-                    ? "border-red-500/50 bg-red-500/10"
-                    : "border-amber-500/50 bg-amber-500/10"
+                    ? "border-destructive/50 bg-destructive/10"
+                    : "border-brand-amber/50 bg-brand-amber/10"
             } else {
               style = "border opacity-50"
             }
@@ -111,7 +111,7 @@ export function CaseStudy({ scenario, onComplete }: CaseStudyProps) {
               onClick={() => handleSelect(option)}
               disabled={showFeedback}
               className={cn(
-                "w-full rounded-lg p-3 text-left text-sm transition-all",
+                "w-full rounded-xl p-3 text-left text-sm transition-colors duration-150",
                 style
               )}
             >
@@ -123,13 +123,13 @@ export function CaseStudy({ scenario, onComplete }: CaseStudyProps) {
 
       {/* Feedback */}
       {showFeedback && selectedOption && (
-        <div className="mt-4 rounded-lg bg-muted/50 p-3">
+        <div className="mt-4 rounded-xl bg-secondary p-3">
           <p className="text-xs text-muted-foreground leading-relaxed">
             {currentStep.feedback[selectedOption]}
           </p>
           <button
             onClick={handleNext}
-            className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150"
           >
             {stepIndex < scenario.steps.length - 1 ? (
               <>

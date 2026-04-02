@@ -3,13 +3,13 @@ import { Separator } from "@/components/ui/separator"
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t bg-background">
+    <footer className="mt-auto border-t border-border bg-card">
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="grid gap-8 sm:grid-cols-3">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 font-semibold">
-              <span className="text-lg">🤖</span>
+              <span className="text-base text-brand-orange">✦</span>
               <span className="text-sm">AI Ustasi</span>
             </div>
             <p className="mt-2 text-xs text-muted-foreground leading-relaxed">

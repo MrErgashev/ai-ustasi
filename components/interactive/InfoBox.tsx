@@ -6,23 +6,23 @@ import { cn } from "@/lib/utils"
 const variants = {
   info: {
     icon: Info,
-    className: "border-blue-500/20 bg-blue-500/5 text-blue-700 dark:text-blue-300",
-    iconClassName: "text-blue-500",
+    className: "border-brand-blue/20 bg-brand-blue/5 text-brand-blue",
+    iconClassName: "text-brand-blue",
   },
   warning: {
     icon: AlertTriangle,
-    className: "border-amber-500/20 bg-amber-500/5 text-amber-700 dark:text-amber-300",
-    iconClassName: "text-amber-500",
+    className: "border-brand-amber/20 bg-brand-amber/5 text-brand-amber",
+    iconClassName: "text-brand-amber",
   },
   tip: {
     icon: Lightbulb,
-    className: "border-emerald-500/20 bg-emerald-500/5 text-emerald-700 dark:text-emerald-300",
-    iconClassName: "text-emerald-500",
+    className: "border-brand-green/20 bg-brand-green/5 text-brand-green",
+    iconClassName: "text-brand-green",
   },
   important: {
     icon: AlertCircle,
-    className: "border-red-500/20 bg-red-500/5 text-red-700 dark:text-red-300",
-    iconClassName: "text-red-500",
+    className: "border-destructive/20 bg-destructive/5 text-destructive",
+    iconClassName: "text-destructive",
   },
 }
 

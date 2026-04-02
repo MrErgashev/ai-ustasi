@@ -19,7 +19,7 @@ export function LessonNav({ prev, next }: LessonNavProps) {
           href={`/dars/${prev.slug}`}
           className={cn(
             buttonVariants({ variant: "outline", size: "sm" }),
-            "gap-1.5"
+            "rounded-full gap-1.5"
           )}
         >
           <ArrowLeft className="h-3.5 w-3.5" />
@@ -35,7 +35,7 @@ export function LessonNav({ prev, next }: LessonNavProps) {
           href={`/dars/${next.slug}`}
           className={cn(
             buttonVariants({ variant: "outline", size: "sm" }),
-            "gap-1.5"
+            "rounded-full gap-1.5"
           )}
         >
           <span className="hidden sm:inline">{next.title}</span>

@@ -1,15 +1,15 @@
 import { BookOpen, Layers, BriefcaseBusiness, Banknote } from "lucide-react"
 
 const stats = [
-  { icon: BookOpen, value: "30", label: "Dars", color: "text-blue-500" },
-  { icon: Layers, value: "5", label: "Modul", color: "text-purple-500" },
+  { icon: BookOpen, value: "30", label: "Dars", color: "text-brand-orange" },
+  { icon: Layers, value: "5", label: "Modul", color: "text-brand-blue" },
   {
     icon: BriefcaseBusiness,
     value: "20+",
     label: "Keys",
-    color: "text-emerald-500",
+    color: "text-brand-green",
   },
-  { icon: Banknote, value: "Bepul", label: "Narxi", color: "text-amber-500" },
+  { icon: Banknote, value: "Bepul", label: "Narxi", color: "text-brand-amber" },
 ]
 
 export function StatsSection() {

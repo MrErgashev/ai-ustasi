@@ -23,7 +23,7 @@ export function CodePlayground({
   }
 
   return (
-    <div className="my-6 rounded-lg border bg-card overflow-hidden">
+    <div className="my-6 rounded-xl border bg-card overflow-hidden">
       {/* Header */}
       <div className="flex items-center justify-between border-b bg-muted/50 px-4 py-2">
         <span className="text-[10px] font-mono uppercase text-muted-foreground">
@@ -58,7 +58,7 @@ export function CodePlayground({
           <p className="mb-1 text-[10px] font-mono uppercase text-muted-foreground">
             Kutilgan natija
           </p>
-          <pre className="text-xs font-mono text-emerald-600 dark:text-emerald-400">
+          <pre className="text-xs font-mono text-brand-green">
             {expectedOutput}
           </pre>
         </div>
