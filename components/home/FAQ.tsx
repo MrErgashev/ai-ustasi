@@ -32,7 +32,7 @@ export function FAQ() {
   return (
     <section className="py-16">
       <div className="mx-auto max-w-2xl px-4">
-        <h2 className="mb-6 text-center text-lg font-semibold">
+        <h2 className="mb-6 text-center text-lg font-semibold font-heading">
           Tez-tez beriladigan savollar
         </h2>
         <Accordion className="w-full">

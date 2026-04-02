@@ -14,7 +14,7 @@ export default function HaqidaPage() {
       <Navbar />
       <main className="flex-1">
         <div className="mx-auto max-w-2xl px-4 py-12">
-          <h1 className="text-2xl font-bold tracking-tight">
+          <h1 className="font-heading text-2xl font-bold tracking-tight">
             Loyiha haqida
           </h1>
 
@@ -33,7 +33,7 @@ export default function HaqidaPage() {
               o&apos;rgatish.
             </p>
 
-            <h2 className="text-base font-semibold text-foreground">
+            <h2 className="font-heading text-base font-semibold text-foreground">
               Asosiy tamoyillar
             </h2>
             <ul className="ml-4 list-disc space-y-2">
@@ -59,7 +59,7 @@ export default function HaqidaPage() {
               </li>
             </ul>
 
-            <h2 className="text-base font-semibold text-foreground">
+            <h2 className="font-heading text-base font-semibold text-foreground">
               Texnologiyalar
             </h2>
             <p>
@@ -68,7 +68,7 @@ export default function HaqidaPage() {
               saqlanadi.
             </p>
 
-            <h2 className="text-base font-semibold text-foreground">
+            <h2 className="font-heading text-base font-semibold text-foreground">
               Muallif
             </h2>
             <p>MrErgashev tomonidan yaratilgan.</p>

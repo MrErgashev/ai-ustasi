@@ -30,11 +30,11 @@ const components = {
   LessonChecklist,
   LessonSteps,
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h1 className="mt-8 mb-4 text-xl font-bold tracking-tight" {...props} />
+    <h1 className="mt-8 mb-4 font-heading text-xl font-bold tracking-tight" {...props} />
   ),
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
-      className="mt-8 mb-3 text-lg font-semibold tracking-tight scroll-mt-20"
+      className="mt-8 mb-3 font-heading text-lg font-semibold tracking-tight scroll-mt-20"
       {...props}
     />
   ),
@@ -61,7 +61,7 @@ const components = {
   ),
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a
-      className="text-foreground underline underline-offset-4 hover:text-foreground/80"
+      className="text-primary underline-offset-4 hover:underline"
       target="_blank"
       rel="noopener noreferrer"
       {...props}
@@ -69,7 +69,7 @@ const components = {
   ),
   blockquote: (props: React.HTMLAttributes<HTMLQuoteElement>) => (
     <blockquote
-      className="mb-4 border-l-2 pl-4 text-sm italic text-muted-foreground"
+      className="mb-4 border-l-2 border-primary pl-4 text-sm italic text-muted-foreground"
       {...props}
     />
   ),

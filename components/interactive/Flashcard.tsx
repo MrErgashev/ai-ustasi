@@ -42,7 +42,7 @@ export function FlashcardDeck({ cards }: FlashcardDeckProps) {
 
   if (finished) {
     return (
-      <div className="my-6 rounded-lg border bg-card p-6 text-center">
+      <div className="my-6 rounded-xl border bg-card p-6 text-center">
         <p className="text-lg font-semibold">Natija</p>
         <p className="mt-2 text-sm text-muted-foreground">
           <span className="text-2xl font-bold font-mono text-foreground">
@@ -52,7 +52,7 @@ export function FlashcardDeck({ cards }: FlashcardDeckProps) {
         </p>
         <button
           onClick={handleReset}
-          className="mt-4 inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm hover:bg-muted transition-colors"
+          className="mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm hover:bg-secondary transition-colors duration-150"
         >
           <RotateCcw className="h-3.5 w-3.5" />
           Qayta ko&apos;rish
@@ -116,14 +116,14 @@ export function FlashcardDeck({ cards }: FlashcardDeckProps) {
       <div className="mt-3 flex items-center justify-center gap-2">
         <button
           onClick={() => handleNext(false)}
-          className="flex items-center gap-1 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-2 text-sm text-red-600 hover:bg-red-500/10 transition-colors dark:text-red-400"
+          className="flex items-center gap-1 rounded-full border border-destructive/20 bg-destructive/5 px-4 py-2 text-sm text-destructive hover:bg-destructive/10 transition-colors duration-150"
         >
           <ChevronLeft className="h-3.5 w-3.5" />
           Bilmayman
         </button>
         <button
           onClick={() => handleNext(true)}
-          className="flex items-center gap-1 rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-4 py-2 text-sm text-emerald-600 hover:bg-emerald-500/10 transition-colors dark:text-emerald-400"
+          className="flex items-center gap-1 rounded-full border border-brand-green/20 bg-brand-green/5 px-4 py-2 text-sm text-brand-green hover:bg-brand-green/10 transition-colors duration-150"
         >
           Bilaman
           <ChevronRight className="h-3.5 w-3.5" />

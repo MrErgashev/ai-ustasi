@@ -38,7 +38,7 @@ export function StepByStep({ steps }: StepByStepProps) {
               className={cn(
                 "relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-xs transition-colors",
                 isDone
-                  ? "border-emerald-500 bg-emerald-500 text-white"
+                  ? "border-brand-green bg-brand-green text-white"
                   : "border-border bg-background hover:border-foreground/30"
               )}
             >
@@ -56,9 +56,9 @@ export function StepByStep({ steps }: StepByStepProps) {
                 {step.content}
               </p>
               {step.tip && (
-                <div className="mt-2 flex items-start gap-1.5 rounded-md bg-amber-500/5 border border-amber-500/10 p-2">
-                  <Lightbulb className="mt-0.5 h-3 w-3 shrink-0 text-amber-500" />
-                  <p className="text-xs text-amber-700 dark:text-amber-300">
+                <div className="mt-2 flex items-start gap-1.5 rounded-md bg-brand-amber/5 border border-brand-amber/10 p-2">
+                  <Lightbulb className="mt-0.5 h-3 w-3 shrink-0 text-brand-amber" />
+                  <p className="text-xs text-brand-amber">
                     {step.tip}
                   </p>
                 </div>

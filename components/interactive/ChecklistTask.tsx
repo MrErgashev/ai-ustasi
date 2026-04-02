@@ -37,7 +37,7 @@ export function ChecklistTask({ title, tasks, onComplete }: ChecklistTaskProps) 
   }
 
   return (
-    <div className="my-6 rounded-lg border bg-card p-5">
+    <div className="my-6 rounded-xl border bg-card p-5">
       <div className="flex items-center justify-between">
         <p className="text-sm font-semibold">{title}</p>
         <span className="text-xs font-mono text-muted-foreground">
@@ -54,7 +54,7 @@ export function ChecklistTask({ title, tasks, onComplete }: ChecklistTaskProps) 
                 className={cn(
                   "mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded border transition-colors",
                   checked[i]
-                    ? "border-emerald-500 bg-emerald-500 text-white"
+                    ? "border-brand-green bg-brand-green text-white"
                     : "border-border hover:border-foreground/30"
                 )}
               >
@@ -87,9 +87,9 @@ export function ChecklistTask({ title, tasks, onComplete }: ChecklistTaskProps) 
       </div>
 
       {allDone && (
-        <div className="mt-4 flex items-center gap-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 p-3">
-          <PartyPopper className="h-4 w-4 text-emerald-500" />
-          <p className="text-sm text-emerald-700 dark:text-emerald-300 font-medium">
+        <div className="mt-4 flex items-center gap-2 rounded-xl bg-brand-green/10 border border-brand-green/20 p-3">
+          <PartyPopper className="h-4 w-4 text-brand-green" />
+          <p className="text-sm text-brand-green font-medium">
             Barcha vazifalar bajarildi!
           </p>
         </div>

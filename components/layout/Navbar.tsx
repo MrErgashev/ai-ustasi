@@ -23,11 +23,11 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="text-lg">🤖</span>
+          <span className="text-base text-brand-orange">✦</span>
           <span className="text-sm tracking-tight">AI Ustasi</span>
         </Link>
 
@@ -40,7 +40,7 @@ export function Navbar() {
               className={cn(
                 "rounded-md px-3 py-1.5 text-sm transition-colors",
                 pathname === link.href
-                  ? "bg-accent text-accent-foreground font-medium"
+                  ? "text-foreground font-semibold"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
@@ -54,7 +54,7 @@ export function Navbar() {
           {/* Progress */}
           {isLoaded && overallProgress > 0 && (
             <div className="hidden items-center gap-2 sm:flex">
-              <Progress value={overallProgress} className="h-1.5 w-20" />
+              <Progress value={overallProgress} className="h-1 w-20" />
               <span className="text-xs tabular-nums text-muted-foreground font-mono">
                 {overallProgress}%
               </span>
@@ -78,7 +78,7 @@ export function Navbar() {
                     className={cn(
                       "rounded-md px-3 py-2 text-sm transition-colors",
                       pathname === link.href
-                        ? "bg-accent text-accent-foreground font-medium"
+                        ? "text-foreground font-semibold"
                         : "text-muted-foreground hover:text-foreground"
                     )}
                   >

@@ -54,7 +54,7 @@ export function Quiz({ questions, onComplete }: QuizProps) {
   if (finished) {
     const finalScore = Math.round((correctCount / questions.length) * 100)
     return (
-      <div className="my-6 rounded-lg border bg-card p-6 text-center">
+      <div className="my-6 rounded-xl border bg-card p-6 text-center">
         <p className="text-lg font-semibold">Natija</p>
         <p className="mt-2 text-3xl font-bold font-mono">
           {correctCount}/{questions.length}
@@ -62,7 +62,7 @@ export function Quiz({ questions, onComplete }: QuizProps) {
         <p className="mt-1 text-sm text-muted-foreground">{finalScore}% to&apos;g&apos;ri</p>
         <button
           onClick={handleReset}
-          className="mt-4 inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm hover:bg-muted transition-colors"
+          className="mt-4 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm hover:bg-secondary transition-colors duration-150"
         >
           <RotateCcw className="h-3.5 w-3.5" />
           Qayta urinish
@@ -72,7 +72,7 @@ export function Quiz({ questions, onComplete }: QuizProps) {
   }
 
   return (
-    <div className="my-6 rounded-lg border bg-card p-5">
+    <div className="my-6 rounded-xl border bg-card p-5">
       {/* Progress */}
       <div className="mb-4 flex items-center justify-between text-xs text-muted-foreground">
         <span className="font-mono">
@@ -95,10 +95,10 @@ export function Quiz({ questions, onComplete }: QuizProps) {
           if (showResult) {
             if (i === current.correctIndex) {
               optionStyle =
-                "border-emerald-500/50 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"
+                "border-brand-green/50 bg-brand-green/10 text-brand-green"
             } else if (i === selectedOption && !isCorrect) {
               optionStyle =
-                "border-red-500/50 bg-red-500/10 text-red-700 dark:text-red-300"
+                "border-destructive/50 bg-destructive/10 text-destructive"
             } else {
               optionStyle = "border opacity-50"
             }
@@ -112,7 +112,7 @@ export function Quiz({ questions, onComplete }: QuizProps) {
               onClick={() => handleSelect(i)}
               disabled={showResult}
               className={cn(
-                "flex w-full items-center gap-3 rounded-lg p-3 text-left text-sm transition-all",
+                "flex w-full items-center gap-3 rounded-xl p-3 text-left text-sm transition-colors duration-150",
                 optionStyle
               )}
             >
@@ -133,13 +133,13 @@ export function Quiz({ questions, onComplete }: QuizProps) {
 
       {/* Explanation */}
       {showResult && (
-        <div className="mt-4 rounded-lg bg-muted/50 p-3">
+        <div className="mt-4 rounded-xl bg-secondary p-3">
           <p className="text-xs text-muted-foreground leading-relaxed">
             {current.explanation}
           </p>
           <button
             onClick={handleNext}
-            className="mt-3 rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="mt-3 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150"
           >
             {currentIndex < questions.length - 1
               ? "Keyingi savol →"

@@ -14,11 +14,7 @@ export function ModuleCard({ module }: { module: Module }) {
 
   return (
     <Link href={`/dars/${module.lessons[0].slug}`}>
-      <Card className="group relative overflow-hidden border transition-all hover:border-foreground/10 hover:shadow-sm p-5">
-        {/* Top color bar */}
-        <div
-          className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${module.color.gradient}`}
-        />
+      <Card className="group relative overflow-hidden border transition-colors duration-150 hover:border-foreground/20 p-5">
 
         <div className="flex items-start justify-between">
           <span className="text-2xl">{module.icon}</span>

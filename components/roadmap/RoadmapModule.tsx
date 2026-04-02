@@ -28,7 +28,7 @@ export function RoadmapModule({ module, index }: RoadmapModuleProps) {
         style={{ backgroundColor: module.color.primary }}
       />
 
-      <div className="rounded-lg border">
+      <div className="rounded-xl border">
         {/* Header */}
         <button
           onClick={() => setOpen(!open)}
@@ -42,7 +42,7 @@ export function RoadmapModule({ module, index }: RoadmapModuleProps) {
                   Modul {module.id}
                 </span>
                 {isLoaded && progress === 100 && (
-                  <Check className="h-3.5 w-3.5 text-emerald-500" />
+                  <Check className="h-3.5 w-3.5 text-brand-green" />
                 )}
               </div>
               <p className="text-sm font-semibold">{module.title}</p>
@@ -75,10 +75,10 @@ export function RoadmapModule({ module, index }: RoadmapModuleProps) {
                 <Link
                   key={lesson.id}
                   href={`/dars/${lesson.slug}`}
-                  className="flex items-center gap-3 rounded-md px-2 py-2 text-sm hover:bg-muted/50 transition-colors"
+                  className="flex items-center gap-3 rounded-md px-2 py-2 text-sm hover:bg-secondary transition-colors duration-150"
                 >
                   {completed ? (
-                    <Check className="h-3.5 w-3.5 shrink-0 text-emerald-500" />
+                    <Check className="h-3.5 w-3.5 shrink-0 text-brand-green" />
                   ) : (
                     <span className="flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full border text-[8px] font-mono">
                       {lesson.id}

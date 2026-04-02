@@ -17,7 +17,7 @@ export function ComparisonTable({
   return (
     <div className="my-6">
       <p className="mb-3 text-sm font-semibold">{title}</p>
-      <div className="overflow-x-auto rounded-lg border">
+      <div className="overflow-x-auto rounded-xl border">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b bg-muted/50">
@@ -44,9 +44,9 @@ export function ComparisonTable({
                   <td key={j} className="p-3 text-center">
                     {typeof value === "boolean" ? (
                       value ? (
-                        <Check className="mx-auto h-4 w-4 text-emerald-500" />
+                        <Check className="mx-auto h-4 w-4 text-brand-green" />
                       ) : (
-                        <X className="mx-auto h-4 w-4 text-red-400" />
+                        <X className="mx-auto h-4 w-4 text-destructive" />
                       )
                     ) : (
                       <span className="text-xs">{value}</span>

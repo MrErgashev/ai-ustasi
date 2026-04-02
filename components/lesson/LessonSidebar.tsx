@@ -33,12 +33,12 @@ export function LessonSidebar() {
                       className={cn(
                         "flex items-center gap-2 rounded-md px-2 py-1.5 text-xs transition-colors",
                         isActive
-                          ? "bg-accent text-accent-foreground font-medium"
-                          : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                          ? "bg-primary/10 text-foreground font-medium"
+                          : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                       )}
                     >
                       {completed ? (
-                        <Check className="h-3 w-3 shrink-0 text-emerald-500" />
+                        <Check className="h-3 w-3 shrink-0 text-brand-green" />
                       ) : (
                         <span className="flex h-3 w-3 shrink-0 items-center justify-center rounded-full border text-[8px] font-mono">
                           {lesson.id}

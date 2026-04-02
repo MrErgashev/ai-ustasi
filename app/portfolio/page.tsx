@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       <Navbar />
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4 py-12">
-          <h1 className="text-2xl font-bold tracking-tight">Portfolio</h1>
+          <h1 className="font-heading text-2xl font-bold tracking-tight">Portfolio</h1>
           <p className="mt-2 text-sm text-muted-foreground">
             Case study lardan hosil qilgan natijalaringiz shu yerda saqlanadi.
           </p>

@@ -17,7 +17,7 @@ export default function Home() {
         {/* Modullar */}
         <section className="py-16">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="mb-2 text-center text-lg font-semibold">
+            <h2 className="mb-2 text-center text-lg font-semibold font-heading">
               Kurs modullari
             </h2>
             <p className="mb-8 text-center text-sm text-muted-foreground">

@@ -34,7 +34,7 @@ export function LessonHeader({
         </Badge>
       </div>
 
-      <h1 className="mt-2 text-xl font-bold tracking-tight sm:text-2xl">
+      <h1 className="mt-2 font-heading text-xl font-bold tracking-tight sm:text-2xl">
         {lesson.title}
       </h1>
 
@@ -51,10 +51,10 @@ export function LessonHeader({
         <button
           onClick={() => toggleLesson(lesson.id)}
           className={cn(
-            "flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors",
+            "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors duration-150",
             completed
-              ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
-              : "border hover:bg-muted"
+              ? "bg-brand-green/10 text-brand-green"
+              : "border hover:bg-secondary"
           )}
         >
           <Check className="h-3.5 w-3.5" />

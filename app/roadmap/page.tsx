@@ -16,7 +16,7 @@ export default function RoadmapPage() {
       <Navbar />
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4 py-12">
-          <h1 className="text-2xl font-bold tracking-tight">Kurs roadmapi</h1>
+          <h1 className="font-heading text-2xl font-bold tracking-tight">Kurs roadmapi</h1>
           <p className="mt-2 text-sm text-muted-foreground">
             5 modul, 30 dars — har bir modulni ketma-ket o&apos;tib, AI bo&apos;yicha
             professional bo&apos;ling.
