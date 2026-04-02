@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next"
 import { getAllLessons } from "@/content/meta/modules"
 
+export const dynamic = "force-static"
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://ai-ustasi.vercel.app"
   const lessons = getAllLessons()
